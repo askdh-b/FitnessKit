@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.lessons.LessonsFragment">
+    android:paddingHorizontal="4dp"
+    tools:context=".ui.screens.lessons.LessonsFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/lvTimetable"
+        android:id="@+id/rvTimetable"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
