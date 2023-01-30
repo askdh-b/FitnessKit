@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">FitnessKit</string>
+    
+    <!-- navigation -->
+    <string name="lessons_title">Занятия</string>
+    <string name="requests_title">Заявки</string>
+    <string name="add_title">Добавить</string>
+    <string name="chat_title">Чат</string>
+    <string name="more_title">Ещё</string>
 </resources>
