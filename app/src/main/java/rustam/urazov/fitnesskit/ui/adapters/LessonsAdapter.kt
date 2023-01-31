@@ -9,8 +9,9 @@ import androidx.recyclerview.widget.RecyclerView
 import rustam.urazov.fitnesskit.R
 import rustam.urazov.fitnesskit.ui.models.LessonView
 
-class LessonAdapter(private val lessons: List<LessonView>) :
-    RecyclerView.Adapter<LessonAdapter.LessonViewHolder>() {
+class LessonsAdapter(
+    private val lessons: List<LessonView>
+) : RecyclerView.Adapter<LessonsAdapter.LessonViewHolder>() {
 
     class LessonViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val vLeft: View = itemView.findViewById(R.id.vLeft)
@@ -37,4 +38,5 @@ class LessonAdapter(private val lessons: List<LessonView>) :
         holder.tvLocation.text = lessons[position].location
         holder.vLeft.setBackgroundColor(Color.parseColor(lessons[position].color))
     }
+
 }

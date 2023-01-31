@@ -12,8 +12,8 @@ import rustam.urazov.fitnesskit.core.exception.Failure
 import rustam.urazov.fitnesskit.core.extension.failure
 import rustam.urazov.fitnesskit.core.extension.observe
 import rustam.urazov.fitnesskit.domain.viewModels.LessonsViewModel
-import rustam.urazov.fitnesskit.ui.adapters.LessonAdapter
-import rustam.urazov.fitnesskit.ui.models.LessonView
+import rustam.urazov.fitnesskit.ui.adapters.TimetableAdapter
+import rustam.urazov.fitnesskit.ui.models.TimetableView
 
 @AndroidEntryPoint
 class LessonsFragment : Fragment(R.layout.fragment_lessons) {
@@ -38,12 +38,11 @@ class LessonsFragment : Fragment(R.layout.fragment_lessons) {
         rvLessons.layoutManager = LinearLayoutManager(context)
 
         lessonsViewModel.getLessons("2")
-
     }
 
-    private fun renderLessonsList(lessons: List<LessonView>?) {
+    private fun renderLessonsList(lessons: List<TimetableView>?) {
         lessons?.let {
-            rvLessons.adapter = LessonAdapter(it)
+            rvLessons.adapter = TimetableAdapter(it)
         }
     }
     private fun handleFailure(failure: Failure?) {
