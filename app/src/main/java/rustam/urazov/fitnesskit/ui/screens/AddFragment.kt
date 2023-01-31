@@ -1,4 +1,4 @@
-package rustam.urazov.fitnesskit.ui.screens.add
+package rustam.urazov.fitnesskit.ui.screens
 
 import androidx.fragment.app.Fragment
 import rustam.urazov.fitnesskit.R

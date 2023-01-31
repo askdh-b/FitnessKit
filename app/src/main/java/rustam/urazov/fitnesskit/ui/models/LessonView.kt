@@ -5,6 +5,6 @@ data class LessonView(
     val endTime: String,
     val lessonName: String,
     val trainerName: String,
-    val color: Int,
+    val color: String,
     val location: String
 )

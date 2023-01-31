@@ -1,4 +1,4 @@
-package rustam.urazov.fitnesskit.ui.screens.general
+package rustam.urazov.fitnesskit.ui.screens
 
 import android.os.Bundle
 import android.view.View

@@ -7,27 +7,27 @@
 
     <fragment
         android:id="@+id/addFragment"
-        android:name="rustam.urazov.fitnesskit.ui.screens.add.AddFragment"
+        android:name="rustam.urazov.fitnesskit.ui.screens.AddFragment"
         android:label="fragment_add"
         tools:layout="@layout/fragment_add" />
     <fragment
         android:id="@+id/chatFragment"
-        android:name="rustam.urazov.fitnesskit.ui.screens.chat.ChatFragment"
+        android:name="rustam.urazov.fitnesskit.ui.screens.ChatFragment"
         android:label="fragment_chat"
         tools:layout="@layout/fragment_chat" />
     <fragment
         android:id="@+id/lessonsFragment"
-        android:name="rustam.urazov.fitnesskit.ui.screens.lessons.LessonsFragment"
+        android:name="rustam.urazov.fitnesskit.ui.screens.LessonsFragment"
         android:label="fragment_lessons"
         tools:layout="@layout/fragment_lessons" />
     <fragment
         android:id="@+id/moreFragment"
-        android:name="rustam.urazov.fitnesskit.ui.screens.more.MoreFragment"
+        android:name="rustam.urazov.fitnesskit.ui.screens.MoreFragment"
         android:label="fragment_more"
         tools:layout="@layout/fragment_more" />
     <fragment
         android:id="@+id/requestsFragment"
-        android:name="rustam.urazov.fitnesskit.ui.screens.requests.RequestsFragment"
+        android:name="rustam.urazov.fitnesskit.ui.screens.RequestsFragment"
         android:label="fragment_requests"
         tools:layout="@layout/fragment_requests" />
 </navigation>

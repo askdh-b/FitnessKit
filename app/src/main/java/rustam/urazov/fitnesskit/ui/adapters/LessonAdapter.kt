@@ -1,5 +1,6 @@
 package rustam.urazov.fitnesskit.ui.adapters
 
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -34,6 +35,6 @@ class LessonAdapter(private val lessons: List<LessonView>) :
         holder.tvLessonName.text = lessons[position].lessonName
         holder.tvTrainerName.text = lessons[position].trainerName
         holder.tvLocation.text = lessons[position].location
-        holder.vLeft.setBackgroundColor(lessons[position].color)
+        holder.vLeft.setBackgroundColor(Color.parseColor(lessons[position].color))
     }
 }

@@ -6,7 +6,7 @@
     app:startDestination="@id/generalFragment">
     <fragment
         android:id="@+id/generalFragment"
-        android:name="rustam.urazov.fitnesskit.ui.screens.general.GeneralFragment"
+        android:name="rustam.urazov.fitnesskit.ui.screens.GeneralFragment"
         android:label="fragment_general"
         tools:layout="@layout/fragment_general" />
 </navigation>
