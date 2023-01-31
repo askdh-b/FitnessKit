@@ -1,5 +1,7 @@
 package rustam.urazov.fitnesskit.domain.models
 
+import rustam.urazov.fitnesskit.data.storage.LessonEntity
+
 data class Lesson(
     val id: String,
     val trainer: String,
@@ -9,4 +11,15 @@ data class Lesson(
     val endTime: String,
     val date: String,
     val color: String
+)
+
+fun Lesson.toLessonEntity(): LessonEntity = LessonEntity(
+    lessonId = id,
+    trainer = trainer,
+    name = name,
+    place = place,
+    startTime = startTime,
+    endTime = endTime,
+    date = date,
+    color = color
 )

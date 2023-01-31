@@ -1,4 +1,4 @@
-package rustam.urazov.fitnesskit.data.models
+package rustam.urazov.fitnesskit.data.network.models
 
 import com.google.gson.annotations.SerializedName
 import rustam.urazov.fitnesskit.domain.models.Data

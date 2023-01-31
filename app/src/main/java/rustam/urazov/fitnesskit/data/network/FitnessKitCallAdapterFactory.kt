@@ -1,4 +1,4 @@
-package rustam.urazov.fitnesskit.data
+package rustam.urazov.fitnesskit.data.network
 
 import okhttp3.Request
 import okhttp3.ResponseBody

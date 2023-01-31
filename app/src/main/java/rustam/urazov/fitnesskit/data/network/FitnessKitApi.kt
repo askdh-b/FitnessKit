@@ -1,10 +1,10 @@
-package rustam.urazov.fitnesskit.data
+package rustam.urazov.fitnesskit.data.network
 
 import retrofit2.http.GET
 import retrofit2.http.Query
 import rustam.urazov.fitnesskit.core.exception.Failure
 import rustam.urazov.fitnesskit.core.functional.Either
-import rustam.urazov.fitnesskit.data.models.DataResponse
+import rustam.urazov.fitnesskit.data.network.models.DataResponse
 
 internal interface FitnessKitApi {
 

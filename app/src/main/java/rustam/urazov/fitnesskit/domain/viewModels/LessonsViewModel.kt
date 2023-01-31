@@ -5,7 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import rustam.urazov.fitnesskit.core.platform.BaseViewModel
-import rustam.urazov.fitnesskit.domain.models.Data
+import rustam.urazov.fitnesskit.domain.models.Lesson
 import rustam.urazov.fitnesskit.domain.useCases.GetLessons
 import rustam.urazov.fitnesskit.ui.models.LessonView
 import rustam.urazov.fitnesskit.ui.models.TimetableView
@@ -28,10 +28,10 @@ class LessonsViewModel @Inject constructor(
         )
     }
 
-    private fun handleLessons(data: Data) {
+    private fun handleLessons(lessonList: List<Lesson>) {
         val formatter = SimpleDateFormat("yyyy-MM-dd HH:mm")
 
-        val lessons = data.lessons.map { lesson ->
+        val lessons = lessonList.map { lesson ->
             LessonView(
                 startTime = lesson.startTime,
                 endTime = lesson.endTime,

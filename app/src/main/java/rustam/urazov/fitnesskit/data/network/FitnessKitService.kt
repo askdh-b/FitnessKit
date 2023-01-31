@@ -1,9 +1,9 @@
-package rustam.urazov.fitnesskit.data
+package rustam.urazov.fitnesskit.data.network
 
 import retrofit2.Retrofit
 import rustam.urazov.fitnesskit.core.exception.Failure
 import rustam.urazov.fitnesskit.core.functional.Either
-import rustam.urazov.fitnesskit.data.models.DataResponse
+import rustam.urazov.fitnesskit.data.network.models.DataResponse
 import javax.inject.Inject
 import javax.inject.Singleton
 
